@@ -41,6 +41,11 @@ Make sure to create a mongo db instance from scratch through the mongo console (
 - Integration with mongodb through mongoose.
 - get retrieving the element from the people collection.
 
+In order to check the correct behaviour opulate some elements in the people collection through the mongo console.
+$ mongo
+> use mongodbdemo
+> db.people.insert({"firstName":"Enrico", "lastName":"Giurin"})
+
 
 ### step-3
 
