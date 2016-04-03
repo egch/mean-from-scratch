@@ -1,7 +1,7 @@
 {
   "name": "mean-from-scratch",
   "version": "1.0.0",
-  "description": "basic MEAN application",
+  "description": "MEAN from scratch",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,8 +21,6 @@
   },
   "homepage": "https://github.com/egch/mean-from-scratch#readme",
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "express": "^4.13.4",
-    "mongoose": "^4.4.10"
+    "express": "^4.13.4"
   }
 }
