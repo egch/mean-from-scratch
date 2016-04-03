@@ -16,11 +16,11 @@ MongoDB, ExpressJS, AngularJS, NodeJS.
 
 
 
-## Tutorial Outline
+## Tutorial
 
-You can check out any point of the tutorial using:
+Proceed step by step by checking out the corresponding tag:
 
-    $ git checkout step-?
+    $ git checkout -f step-?
 
 Make sure to run npm install / bower install after each checkout to have the latest dependencies installed locally (node_modules/bower_components).
 
