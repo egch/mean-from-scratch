@@ -20,13 +20,13 @@ MongoDB, ExpressJS, AngularJS, NodeJS.
 
 Proceed step by step by checking out the corresponding tag:
 
-    $ git checkout -f step-?
+> $ git checkout -f step-?
 
 Make sure to run npm install / bower install after each checkout to have the latest dependencies installed locally (node_modules/bower_components).
 
 To run the application execute:
 
-$ node server.js
+> $ node server.js
 
 Make sure to create a mongo db instance from scratch through the mongo console ($mongo)
 > use mongodbdemo
@@ -42,9 +42,10 @@ Make sure to create a mongo db instance from scratch through the mongo console (
 - get retrieving the element from the people collection.
 
 In order to check the correct behaviour opulate some elements in the people collection through the mongo console.
-$ mongo
-> use mongodbdemo
-> db.people.insert({"firstName":"Enrico", "lastName":"Giurin"})
+
+> $ mongo
+> >use mongodbdemo
+> >db.people.insert({"firstName":"Enrico", "lastName":"Giurin"})
 
 
 ### step-3
