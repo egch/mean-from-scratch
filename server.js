@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var Person = require('./models/Person.js');
 var app = express();
 
+
 mongoose.connect('mongodb://localhost/mongodbdemo');
 
 var db = mongoose.connection;
@@ -17,23 +18,29 @@ db.once('open', function() {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/', function(request, response){
+//serves static angular
+app.use(express.static(__dirname + '/public'));
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
+
+var router = express.Router();
+
+router.route('/people')
+.get(function(request, response){
 	Person.find(function(error, data)
 	{
 		response.json(data);
 	});
-});
-
-
-app.post('/', function(request, response){
+})
+.post(function(request, response){
 	var np = new Person();
 	np.firstName = request.body.firstName;
 	np.lastName = request.body.lastName;
 	np.save(function(error){
 		response.json("A new person has been created");
 	});
-});
 
+});
+app.use('/api', router);
 app.listen(3000, function(){
 	console.log('...listening on port 3000');
 });
