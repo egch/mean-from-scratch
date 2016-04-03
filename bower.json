@@ -1,0 +1,28 @@
+{
+  "name": "mean-from-scratch",
+  "description": "MEAN from scratch",
+  "main": "public/index.html",
+  "authors": [
+    "Enrico Giurin"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "MEAN"
+  ],
+  "homepage": "https://github.com/egch/mean-from-scratch",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-resource": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2"
+  }
+}
